@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Beauty Parlour Name</title>
+    <style>
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background: #fff;
+    padding: 20px 0;
+    width:100%;
+    height: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    width: 50px;
+    height: inherit;
+    margin-left: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #e91e63;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .cta-button {
+    background: #e91e63;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* About Us Section */
+#about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Services Section */
+#services {
+    background: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background: #f4f4f4;
+    margin: 10px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.service-item img{
+    width: 150px;
+    height:150px
+}
+
+.service-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1.1em;
+}
+
+/* Gallery Section */
+#gallery {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#gallery h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials Section */
+#testimonials {
+    background: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+blockquote {
+    font-size: 1.2em;
+    margin: 20px auto;
+    max-width: 800px;
+    border-left: 5px solid #e91e63;
+    padding-left: 20px;
+}
+
+blockquote footer {
+    font-size: 1em;
+    text-align: right;
+    margin-top: 10px;
+}
+
+/* Contact Us Section */
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #e91e63;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Footer Styling */
+footer {
+    background: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-list,
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item,
+    .gallery img {
+        width: 80%;
+    }
+}
+.specialists-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .specialist {
+            text-align: center;
+            width: 200px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+            h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .specialist img {
+            width: 150px;
+            height: 150px;
+            border: 1px;
+            border-radius:50px;
+            border-color: rgb(212, 25, 57);
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .specialist h3 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        .specialist:hover {
+            transform: translateY(-10px); /* Moves the specialist card up */
+            box-shadow: 0 8px 16px #ff09a1e7; /* Adds shadow effect */
+        }
+        .specialist:hover img {
+            transform: scale(1.1); /* Enlarges the image slightly */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <nav>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7pMVLkrVjbKnoO3HrVsrBgJ86E5HJ9jJ9LQ&s">
+            </nav>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Your BEAUTY QUEENS</h1>
+        <p>Experience the best in beauty and relaxation.</p>
+        <a href="#services" class="cta-button">Explore Our Services</a><br>
+        <br><br><a href="appoinment.html" class="cta-button">Book Appointment</a>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to providing top-notch beauty services in a relaxing environment. Our team of professionals is here to cater to all your beauty needs.</p>
+    </section>
+    <br>
+    <br>
+    <h2>Speacialists</h2>
+    <div class="specialists-section">
+        
+        <div class="specialist">
+            <img src="https://cdn-icons-png.flaticon.com/128/6997/6997662.png" alt="Specialist 1">
+            <h3> SHUBHI SHARMA</h3>
+        </div>
+        <div class="specialist">
+            <img src="https://cdn-icons-png.flaticon.com/128/4140/4140047.png" alt="Specialist 2">
+            <h3>SHEWTA MISHRA </h3>
+        </div>
+        <div class="specialist">
+            <img src="https://cdn-icons-png.flaticon.com/128/11498/11498793.png" alt="Specialist 3">
+            <h3> SHREYA YADAV </h3>
+        </div>
+        </div>
+    </div>
+
+    <section id="services">
+        <h2>Our Services</h2>
+
+        <div class="service-list">
+            <div class="service-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZVA27i2YgN3UnZ9yxj1QBFtI_ZcnX43sU1A&s" alt="Service 9">
+
+                <h3>Hair Styling</h3>
+                <p>From cuts to color, we offer a range of hair services to suit your style.</p>
+            </div>
+            <div class="service-item">
+                <img src="https://content.jdmagicbox.com/comp/def_content/beauty-parlours/beauty-parlours-1-beauty-parlours-12-4pq8a.jpg" alt="Service 10">
+
+                <h3>Facials</h3>
+                <p>Rejuvenate your skin with our customized facial treatments.</p>
+            </div>
+            <div class="service-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3NcEp42-AZjBolslv81_JkzrP6VyMQOKdSA&s" alt="Service 11">
+                <h3>Manicure & Pedicure</h3>
+                <p>Pamper your hands and feet with our luxurious nail services.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="https://media.istockphoto.com/id/1856117770/photo/modern-beauty-salon.jpg?s=612x612&w=0&k=20&c=dVZtsePk2pgbqDXwVkMm-yIw5imnZ2rnkAruR7zf8EA=" alt="Service 1">
+            <img src="https://media.istockphoto.com/id/1497806504/photo/hair-styling-in-beauty-salon-woman-does-her-hair-in-modern-beauty-salon-woman-stylist-dries.jpg?s=612x612&w=0&k=20&c=3dO_HWS8WvSGNbGmxTsqK70vZMGqM2REnbVJG09YnmI=" alt="Service 2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlheBRE0vqFFnI1ovFxSa-rAGxMbYatS9tkw&s" alt="Service 3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtk_dcQynncjbJFQv3Jxo5GkBZYQ9m1H__NQ&s" alt="Service 4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAi3bl1u1rOwcP0sUJzrDwzoe-COzYPh5ABg&s" alt="Service 5">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxy-eqYcCEQ-IfrEU4ThndGcd4R519-QfJpA&s" alt="Service 6">
+
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <blockquote>
+            <p>"An amazing experience! The staff is professional, and I left feeling rejuvenated."</p>
+            <footer>- Shubhi sharma</footer>
+        </blockquote>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Visit us at:</p>
+        <p>123 mohanlal ganj , Lucknow, Uttar Pradesh</p>
+        <p>Phone: 123-456-7890</p>
+        <p>Email: contact@yourbeautyparlour.com</p>
+        <form action="submit_form.php" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</body>
+</html>
